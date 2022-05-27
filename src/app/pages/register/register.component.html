@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            
+                    
+                
+                <form #registrationForm="" (ngSubmit)="submitSignup()">
+                    <h3 id="logo">Create Account</h3>
+                    <div class="mb-3">
+                      <label  class="form-label">Name</label>
+                      <input type="text" class="form-control" name="name" id="name"  [(ngModel)]="form.name">
+                    </div>
+                    
+
+                    <div class="mb-3">
+                        <label  class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" id="email"  [(ngModel)]="form.email">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label  class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password"  [(ngModel)]="form.password">
+                    </div>
+                   
+
+                    <!-- <div class="mb-3">
+                        <label  class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" name="Cpassword" id="Cpassword"  [(ngModel)]="form.Cpassword">
+                    </div> -->
+                   
+                    <button type="submit" id="create" class="btn btn-danger btn-lg">Create</button><a routerLink="/login" class="nav-link text-center text-danger">     Login to an Existing Account</a>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+<!--********************************************************************************************************-->
+
+        
+

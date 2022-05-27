@@ -1,0 +1,29 @@
+
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5"> Find a wonderfull Outfits in <span>SO</span>by  <br/> </h1>
+        <a routerLink="menu" class="Checkbtn">Check Now <i class="bi bi-arrow-right "></i></a>
+    </div>
+</div>
+
+
+
+<!--foodbox-->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center"><span>Dresses</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let product of productData">
+            <div class="foodbox">
+                <img src="{{product.productImg}}"/>
+                <h1 class="text-center">{{product.productName}}</h1>
+                <p class="text-center">{{product.productPrice | currency: '$'}}</p>
+            </div>
+        </div>
+    </div>
+
+   
+
+   
+
+    <a routerLink="menu" class="viewmorebtn">View more <i class="bi bi-arrow-right"></i></a>
+</div>

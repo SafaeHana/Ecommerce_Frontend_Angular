@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+           
+        
+                <form #loginForm="ngForm" (ngSubmit)="submitLogin()" >
+                    <h3 id="logo">Login</h3>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="form.email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" [(ngModel)]="form.password" required>
+                    </div>
+                    
+                   
+                    <button type="submit" class="btn btn-danger btn-lg" [disabled]="" routerLink="/admin">Login</button> 
+                    <a class="forgot" href="" >Forgot Password?</a>
+                    <a routerLink="/register" class="nav-link text-center text-danger"> Register a New Account</a>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+

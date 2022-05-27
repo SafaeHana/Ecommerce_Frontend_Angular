@@ -1,0 +1,27 @@
+
+
+<div>
+          <table class="table table-striped">
+                    <thead>
+                              <th>ID</th>
+                              <th>categoy Name</th>
+                              <th>details</th>
+                              <th>Image</th>
+                              <th>Actions</th>
+                    </thead>
+                    <tbody *ngIf="categories.length">
+          <tr *ngFor="let categoy of categories">
+                    <td>{{categoy.id}}</td>
+                    <td>{{categoy.categoryName}}</td>
+                    <td>{{categoy.categoryDetails}}</td>
+                    <td>{{categoy.categorytImg}}</td>
+                    <td><button class="btn btn-info" routerLink="">Edit</button>&nbsp;<button class="btn btn-danger" >Delete</button></td>
+          </tr>
+                    </tbody>
+          
+          </table>
+</div>
+
+<div>
+    <button class="btn btn-primary" routerLink="/add">Add New Categoy</button>
+</div>

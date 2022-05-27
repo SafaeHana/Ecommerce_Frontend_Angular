@@ -1,0 +1,32 @@
+th{
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 20px;
+    
+}
+table{
+    margin-left: 170px;
+    margin-right: 80px;
+    border-spacing: 5px;
+    border: 1px solid black;
+    
+}
+
+.container{
+    margin-top: 30px;
+    position: relative;
+}
+table>thead>tr>th {
+    width:0% !important;
+    }
+    button{
+        float: right;
+        margin-bottom: 25px;
+       
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+        text-align: center;
+      }

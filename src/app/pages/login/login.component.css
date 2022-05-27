@@ -1,0 +1,124 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+
+body {
+	background-image: url("https://www.bhinterieur.ch/file/2018/02/cabinet-medical-bh-interieur.jpg"); 
+
+	margin:0;
+	font-family:arial,tahoma,sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	direction:ltr;
+}
+
+form {
+	
+	margin:6% auto 0 auto;
+	padding:40px;
+	width:600px;
+	height:auto;
+	overflow:hidden;
+	background:rgb(249, 230, 230);
+	border-radius:10px;
+}
+
+form label {
+	font-size:14px;
+	color:rgb(233, 77, 77);
+	cursor:pointer;
+}
+
+form label,
+form input {
+	float:left;
+	clear:both;
+}
+
+form input {
+	margin:15px 0;
+	padding:15px 10px;
+	width:100%;
+	outline:none;
+	border:1px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+form input[type=text]:focus,
+form input[type="password"]:focus {
+	border-color:rgb(237, 100, 100);
+}
+
+input[type=submit] {
+	padding:5px 5px;
+	width:auto;
+	background:#e8afc6;
+	border:none;
+	color:rgb(207, 97, 115);
+	cursor:pointer;
+	display:inline-block;
+	float:right;
+	clear:right;
+	-webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+
+input[type=submit]:hover {
+	opacity:0.8;
+}
+
+input[type="submit"]:active {
+	opacity:0.4;
+}
+
+.forgot{
+    float:right;
+    display:inline-block;
+	color:rgb(180, 73, 73);
+	text-decoration:none;
+}
+.register {
+	margin:20px;
+    padding-top: 20px;
+	float:left;
+	clear:left;
+	display:inline-block;
+	color:rgb(243, 149, 179);
+	text-decoration:none;
+}
+
+.forgot:hover,
+.register:hover {
+	color:darkgray;
+}
+
+#logo {
+	margin:0 auto;
+	width:200px;
+	font-family:'Lily Script One', cursive;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	color:rgb(241, 155, 155);
+	-webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+#logo:hover {
+	color:rgb(190, 75, 83);
+}

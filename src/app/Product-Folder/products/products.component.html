@@ -1,0 +1,37 @@
+<button class="btn btn-danger"  (click) = toggleDisplay()>Add New Product</button>
+
+
+<div class="container">
+   
+    <table class="table table-bordered">
+              <thead class="table-danger">
+                        <th class="table-danger">ID</th>
+                        <th class="table-danger"> Name</th>
+                        <th class="table-danger">details</th>
+                        <th class="table-danger">Price</th>
+                        <th class="table-danger">Image</th>
+                        <th class="table-danger">Category</th>
+                        <th class="table-danger">actions</th>
+              </thead>
+              <tbody *ngIf="products.length">
+    <tr *ngFor="let product of products" class="table-danger">
+              <td>{{product.id}}</td>
+              <td>{{product.productName}}</td>
+              <td>{{product.productDetails}}</td>
+              <td>{{product.productPrice}}</td>
+              <td>{{product.productImg}}</td>
+              <td>{{product.stockQuantity}}</td>
+              <td>{{product.category_id}}</td>
+              <td><button class="btn btn-info" routerLink="/addProduct">Edit</button>&nbsp;<button class="btn btn-danger" >Delete</button></td>
+    </tr>
+              </tbody>
+    
+    </table>
+</div>
+
+<div><br>
+    <app-new-product  *ngIf = "isShow"></app-new-product>
+
+
+</div>
+
